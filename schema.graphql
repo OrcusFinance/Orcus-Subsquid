@@ -1,0 +1,23 @@
+type Transfer @entity {
+  id: ID!
+  from: String!
+  to: String!
+}
+
+type TVLChart @entity {
+  id: ID!
+  currentTimestamp: BigInt!
+  endTimestamp: BigInt!
+  value: Float!
+}
+
+type ProfitManagerItem @entity {
+  id: ID!
+  timestamp: BigInt!
+  oruFromFee: Float!
+  usdcFromInvest: Float!
+  oruArbitrager: Float!
+  oruPenalty: Float!
+  totalInOru: Float!
+  totalInUsd: Float!
+}
